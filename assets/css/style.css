@@ -898,12 +898,14 @@ margin-top: 15px;
 .meet-team {
   background: #f7f7f7 none repeat scroll 0 0;
 }
-.our-team{background: #fff none repeat scroll 0 0;
-border-radius: 3px;
-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
-margin: 0 15px;
-padding: 20px;
-text-align: center;}
+.our-team{
+  background: #fff none repeat scroll 0 0;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  margin: 0 15px 5px 15px;
+  padding: 20px;
+  text-align: center;
+}
 .our-team .pic{
     border-radius: 50%;
     overflow: hidden;
@@ -950,9 +952,9 @@ text-transform: capitalize;
     left: 0;
     right: 0;
 }
-.our-team .post{
-    display: block;
-}
+.our-team .post{ display: block; }
+.our-team .post-title { font-weight: bold; }
+.our-team .post-body { min-height: 3.75em; }
 .our-team .icon{
     list-style: none;
     padding: 0;
@@ -1236,7 +1238,7 @@ width: 100%;
 .newsletter-title {
 color: #fff;
 font-weight: 900;
-margin-bottom: 30px;
+margin-bottom: 0;
 text-transform: capitalize;
 }
 @media only screen and (max-width:768px) {
