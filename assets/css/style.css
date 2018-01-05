@@ -430,7 +430,26 @@ transform: translate(0%, -50%);
 width: 100%;
 z-index: 15;
 }
-video { min-width: 100% }
+
+video { min-width: 100%; }
+@media only screen and (min-width:1333px) {
+  video {
+    min-height: 100%;
+    position: relative;
+    top: 50%;
+    margin-top: calc(-100vw/640*360/2);
+  }
+}
+@media only screen and (max-width:1333px) {
+  video {
+    min-height: 100%;
+    margin-left: -667px;
+    left: 50%;
+    position: relative;
+  }
+}
+
+
 /*START FLEXSLIDER CSS*/
 .flexslider .slides > li:first-child {
 	display: block;
