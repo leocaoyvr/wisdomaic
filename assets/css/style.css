@@ -562,7 +562,7 @@ text-transform: capitalize;
 .single_about_two p{margin: 30px 0;}
 
 .single_about_two_img{text-align: center;}
-.single_about_two_img img{}
+.single_about_two_img img { width: 100%; }
 /*END ABOUT TWO*/
 /*
 * ----------------------------------------------------------------------------------------
@@ -579,11 +579,11 @@ text-transform: capitalize;
 padding-top:60px;
 padding-bottom:0px;}
 .our_service:before {
-background: #40B4E5 none repeat scroll 0 0;
+background: #1EAAE6 none repeat scroll 0 0;
 content: "";
 height: 100%;
 left: 0;
-opacity: 0.85;
+opacity: 0.8;
 position: absolute;
 top: 0;
 width: 100%;
@@ -858,11 +858,11 @@ padding:100px 0;
 position: relative;
 }
 .promotion_section:before {
-background:#40B4E5;
+background: #1EAAE6;
 content: "";
 height: 100%;
 left: 0;
-opacity:0.85;
+opacity: 0.6;
 position: absolute;
 top: 0;
 width: 100%;
@@ -1230,11 +1230,11 @@ padding:100px 0;
 position: relative;
 }
 .newsletter_section:before {
-background: #40B4E5 none repeat scroll 0 0;
+background: #1EAAE6 none repeat scroll 0 0;
 content: "";
 height: 100%;
 left: 0;
-opacity: 0.85;
+opacity: 0.6;
 position: absolute;
 top: 0;
 width: 100%;
