@@ -292,18 +292,23 @@ margin-top: 0px;
 .navbar-default.menu-shrink {
     background-color: #222;
     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
+    padding: 0;
     width: 100%;
 }
 @media only screen and (max-width:480px) {
     .menu-top {
         color: #fff !important;
         margin-left: 0px;
+        padding: 10px 0;
     }
 }
 .navbar-default.menu-shrink li a { color:rgba(255,255,255,0.9) !important; }
 .navbar-default.menu-shrink li a:hover { color: #1EAAE6 !important }
-.navbar-default .navbar-toggle { background: #fff none repeat scroll 0 0 }
+.navbar-default .navbar-toggle {
+  background: #fff none repeat scroll 0 0;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus { background-color: #fff }
 .navbar-default .navbar-toggle .icon-bar { background-color: #1EAAE6 }
