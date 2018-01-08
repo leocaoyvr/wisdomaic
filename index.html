@@ -20,6 +20,8 @@
 		<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">
 		<!-- component CSS -->
 		<link rel="stylesheet" href="assets/css/aos.css">
+		<!-- scrollbar CSS -->
+		<link rel="stylesheet" href="assets/css/OverlayScrollbars.css">
 		<!-- Style CSS -->
 		<link rel="stylesheet" href="assets/css/style.css">
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -428,7 +430,15 @@
 			<script src="assets/js/aos.js"></script>
 		<!-- switcher js -->
 			<script src="assets/js/switcher.js"></script>
+		<!-- scrollbar js -->
+			<script src="assets/js/jquery.overlayScrollbars.js"></script>
 		<!-- scripts js -->
 			<script src="assets/js/scripts.js"></script>
+		<!-- scrollbar js -->
+			<script>
+				$(function() {
+					$('.our-team .details').overlayScrollbars({ });
+				});
+			</script>
     </body>
 </html>
