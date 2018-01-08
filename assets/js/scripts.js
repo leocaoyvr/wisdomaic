@@ -5,16 +5,16 @@ Version      : 1.0
 */
 (function($) {
 	'use strict';
-	
+
 	jQuery(document).on('ready', function(){
-	
+
 		/*PRELOADER JS*/
-		$(window).on('load', function() { 
+		$(window).on('load', function() {
 			$('.status').fadeOut();
-			$('.preloader').delay(350).fadeOut('slow'); 
-		}); 
-		/*END PRELOADER JS*/		
-		
+			$('.preloader').delay(350).fadeOut('slow');
+		});
+		/*END PRELOADER JS*/
+
 		/*START MENU JS*/
 			$('a.page-scroll').on('click', function(e){
 				var anchor = $(this);
@@ -22,7 +22,7 @@ Version      : 1.0
 					scrollTop: $(anchor.attr('href')).offset().top - 50
 				}, 1500);
 				e.preventDefault();
-			});		
+			});
 
 			$(window).scroll(function() {
 			  if ($(this).scrollTop() > 100) {
@@ -31,16 +31,16 @@ Version      : 1.0
 				$('.menu-top').removeClass('menu-shrink');
 			  }
 			});
-			
+
 			$(document).on('click','.navbar-collapse.in',function(e) {
 			if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
 				$(this).collapse('hide');
 			}
-			});				
-		/*END MENU JS*/ 							
+			});
+		/*END MENU JS*/
 
 
-		
+
 		/*START HOME WATER JS*/
 		  if (typeof $.fn.ripples == 'function') {
 				try {
@@ -53,8 +53,8 @@ Version      : 1.0
 				}
 			}
 		/*END HOME WATER JS*/
-		
-		/*START TEAM JS*/	
+
+		/*START TEAM JS*/
 		$("#team-slider").owlCarousel({
 		   items:4,
 			itemsDesktop:[1000,3],
@@ -67,7 +67,7 @@ Version      : 1.0
 			autoPlay:false
 		});
 		/*END TEAM JS*/
-		
+
 		/* START TESTIMONIAL JS */
 		$("#testimonial-slider").owlCarousel({
 			items:2,
@@ -78,7 +78,7 @@ Version      : 1.0
 			navigation:false,
 			autoplay:false
 		});
-		/* END TESTIMONIAL JS */	
+		/* END TESTIMONIAL JS */
 
 		/* START COUNTDOWN JS*/
 		$('.counter_feature').on('inview', function(event, visible, visiblePartX, visiblePartY) {
@@ -96,7 +96,7 @@ Version      : 1.0
 				$(this).unbind('inview');
 			}
 		});
-		/* END COUNTDOWN JS */	
+		/* END COUNTDOWN JS */
 
 		/*START PARTNER LOGO*/
 		$('.partner').owlCarousel({
@@ -105,15 +105,15 @@ Version      : 1.0
 		  itemsDesktop : [1199,3],
 		  itemsDesktopSmall : [979,3]
 		});
-		/*END PARTNER LOGO*/		
-		
-	}); 	
-	
+		/*END PARTNER LOGO*/
+
+	});
+
 	/* START PARALLAX JS */
 	(function () {
 
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		 
+
 		} else {
 			$(window).stellar({
 				horizontalScrolling: false,
@@ -122,14 +122,14 @@ Version      : 1.0
 		}
 
 	}());
-	/* END PARALLAX JS  */	
-	
+	/* END PARALLAX JS  */
+
 	/*START ANIMATION JS*/
 	  AOS.init();
-	/*END ANIMATION JS*/	
-				
+	/*END ANIMATION JS*/
+
 })(jQuery);
 
 
-  
+
 
